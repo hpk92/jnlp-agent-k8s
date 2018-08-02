@@ -1,3 +1,4 @@
+# The MIT License
 #
 #  Copyright (c) 2015-2017, CloudBees, Inc.
 #
@@ -19,7 +20,7 @@
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 #  THE SOFTWARE.
 
-FROM jenkins/slave:3.19-1
+FROM jenkins/jnlp-slave:3.19-1-alpine
 USER root
 
 # add group & user
