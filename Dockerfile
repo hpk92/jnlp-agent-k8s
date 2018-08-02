@@ -24,9 +24,7 @@ FROM jenkins/jnlp-slave:3.19-1-alpine
 USER root
 
 # add group & user
-RUN addgroup -gid 1000 piper
-RUN useradd piper --uid 1000 --gid 1000 --shell /bin/bash --create-home
-
+RUN adduser -D -h /home/piper -u 1000 piper -s /bin/bash
 
 USER piper
 WORKDIR /home/piper
